@@ -1,0 +1,9 @@
+.reading-list {
+    float: left;
+    width: 95%;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: lightgray;
+    border: 2px solid black;
+    width: 100%;
+}

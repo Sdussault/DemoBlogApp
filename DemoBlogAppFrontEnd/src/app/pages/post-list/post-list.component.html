@@ -1,0 +1,11 @@
+<div class='post-list'>
+    <h2>
+        Posts
+    </h2>
+    Search by title: <input [(ngModel)]='searchTerm' type='text' class='form-control search-input'>
+    <app-post-card *ngFor="let post of getPosts()" [post]="post" [selected]='post == selectedPost' (selectPost)='selectPost($event)'></app-post-card>
+</div>
+<div class='post-details'>
+    <app-post-details [post]='selectedPost'></app-post-details>
+    <app-reading-list></app-reading-list>
+</div>

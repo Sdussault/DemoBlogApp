@@ -1,0 +1,16 @@
+.post-details {
+    float: left;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: lightgray;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.comment-input {
+    width: 100%;
+    border: none;
+    height: 200px;
+    resize: none;
+    margin-top: 10px;
+}

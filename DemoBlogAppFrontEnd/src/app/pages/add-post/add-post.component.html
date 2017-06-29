@@ -1,0 +1,22 @@
+<h2>New Post</h2>
+<form [formGroup]='addForm' #postForm="ngForm" (ngSubmit)='onSubmit()' class='add-post-form'>
+    <label for='title'>Title: </label>
+    <input id='title' type='text' formControlName='title' class='form-control'>
+    <div *ngIf='title.touched && title.errors' class='error'>
+        <span> Please enter a valid title </span>
+    </div> <br />
+
+    <label for='author'>Author:</label>
+    <input id='author' type='text' formControlName='author' class='form-control'>
+    <div *ngIf='author.touched && author.errors' class='error'>
+        <span> Please enter a valid name </span>
+    </div> <br />
+
+    <label for='body'>Body:</label>
+    <textarea id='body' type='text' formControlName='body' class='form-control' class='form-control body-input'></textarea>
+    <div *ngIf='body.touched && body.errors' class='error'>
+        <span> Please enter a valid body </span>
+    </div> <br />
+
+	<button type="submit" [disabled]="!postForm.form.valid" class="btn btn-primary">Submit</button>
+</form>

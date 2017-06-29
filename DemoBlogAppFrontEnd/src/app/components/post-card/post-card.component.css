@@ -1,0 +1,21 @@
+.post-card {
+    display: inline-block;
+    background: lightgrey;
+    border-radius: 5%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 100%;
+}
+
+.post-card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    background: lightblue;
+}
+
+.selected {
+    background: darkgray;
+}

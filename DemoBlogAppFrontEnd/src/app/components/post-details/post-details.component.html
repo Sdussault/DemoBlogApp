@@ -1,0 +1,12 @@
+<div class="post-details" *ngIf='post'>
+    <b>{{post.id}}. {{post.title | uppercase}} </b><br />
+    created on {{post.creationDate}}<br />
+    by {{post.author}} <br /><br />
+    {{post.body}} <br /><br />
+    views: {{post.views}} <br /><br />
+    <button (click)='addPostToReadlist()'  class='btn btn-primary'>Add to reading list</button>
+    <button (click)='removePostFromReadingList()' class='btn btn-primary'>Remove from reading list</button> <br/>
+    <div>
+        <textarea type='text' placeholder='please enter a comment...' [(ngModel)]='comment' class='comment-input form-control'></textarea>
+    </div>
+</div>

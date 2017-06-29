@@ -1,0 +1,15 @@
+.post-list {
+    width: 60%;
+    float: left;
+}
+.post-details {
+    margin-top: 135px;
+    width: 39%;
+    float: left;
+    margin-left: 10px;
+}
+.search-input {
+    margin-bottom: 12px;
+    margin-top: 3px;
+    width: 45%;
+}
